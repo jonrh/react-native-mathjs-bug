@@ -1,3 +1,9 @@
+# To demonstrate bundling non-dev bundles the following command is run:
+# react-native bundle --dev=false --platform=ios --entry-file=index.ios.js --bundle-output something.jsbundle
+# The below ingores these two generated files to be submitted to the repo.
+something.jsbundle
+something.jsbundle.meta
+
 # OSX
 #
 .DS_Store
