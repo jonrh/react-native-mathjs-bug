@@ -11,17 +11,23 @@ import {
   Text,
   View
 } from 'react-native';
+let Decimal = require("decimal.js");
 
 export default class ReactNativeMathjsBug extends Component {
   render() {
+    const decimalAnswer = new Decimal(0.3).minus(0.1);
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          React Native Math.js Bug
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
+
+        <Text>{`JavaScript: 0.3 - 0.1 = ${0.3 - 0.1}`}</Text>
+        <Text>{`With decimal.js: 0.3 - 0.1 = ${decimalAnswer}`}</Text>
+
+        <Text></Text>
+
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
