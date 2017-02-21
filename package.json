@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "decimal.js": "5.0.8",
+    "mathjs": "^3.9.2",
     "react": "15.4.2",
     "react-native": "0.41.2"
   },
